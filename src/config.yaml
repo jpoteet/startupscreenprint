@@ -11,7 +11,7 @@ metadata:
   title:
     default: Startup Screen Printing
     template: '%s — Startup Screen Printing'
-  description: "\U0001F680 Suitable for Startups, Small Business, Sass Websites, Professional Portfolios, Marketing Websites, Landing Pages & Blogs."
+  description: "Build a profitable screen print business from scratch"
   robots:
     index: true
     follow: true
