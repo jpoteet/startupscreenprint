@@ -3,7 +3,7 @@ publishDate: 2023-02-03
 author: Jesse Poteet
 title: Every piece of equipment I use to run a screen print business in my basement
 excerpt: Here's a list of every piece of equipment I use to run a screen print business in my basement.
-image: /src/assets/images/SSP_IMAGES-11.png
+image: ~/assets/images/SSP_IMAGES-11.png
 category: Equipment
 ---
 

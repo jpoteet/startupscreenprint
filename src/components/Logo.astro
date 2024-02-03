@@ -1,7 +1,9 @@
 ---
 import { SITE } from '~/utils/config';
+import { Image } from 'astro:assets';
+import logo from '~/assets/images/Startup-Screenprinting-horizontal.png';
 ---
 
 <span class="self-center ml-2 rtl:ml-0 rtl:mr-2 text-2xl md:text-xl font-bold text-gray-900 whitespace-nowrap dark:text-white">
-  <img src="/src/assets/images/Startup-Screenprinting-horizontal.png" style="width:250px;">
+  <Image src={logo} style="width:250px;" alt="Startup Screen Printing" />
 </span>

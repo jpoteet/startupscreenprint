@@ -3,7 +3,7 @@ publishDate: 2023-01-02
 author: Jesse Poteet
 title: Welcome to Startup Screen Printing
 excerpt: Welcome to the Startup Screen Printing blog, a place dedicated creators start and grow successful screen print businesses.
-image: /src/assets/images/JessePoteet.jpg
+image: ~/assets/images/JessePoteet.jpg
 category: News
 ---
 

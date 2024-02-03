@@ -3,7 +3,7 @@ publishDate: 2023-04-15
 author: Jesse Poteet
 title: Top 10 Screen Printing YouTube Channels you should subscribe to
 excerpt: If you're searching for screen printing tips, these should be the channels you look to first.
-image: /src/assets/images/SSP_IMAGES-9.JPG
+image: ~/assets/images/SSP_IMAGES-9.jpg
 category: Tips
 ---
 

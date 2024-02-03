@@ -3,7 +3,7 @@ publishDate: 2023-03-19
 author: Jesse Poteet
 title: Top 6 apparel items your customers will love
 excerpt: Use these next time your customer asks for recommendations.
-image: /src/assets/images/SSP_IMAGES-1.JPG
+image: ~/assets/images/SSP_IMAGES-1.JPG
 category: Tips
 ---
 

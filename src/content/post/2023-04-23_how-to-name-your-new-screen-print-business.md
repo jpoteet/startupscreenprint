@@ -3,7 +3,7 @@ publishDate: 2023-04-23
 author: Jesse Poteet
 title: How to name your new screen print business
 excerpt: Naming your business isn't as hard as you think.
-image: /src/assets/images/SSP_IMAGES-13.png
+image: ~/assets/images/SSP_IMAGES-13.png
 category: Tips
 ---
 
