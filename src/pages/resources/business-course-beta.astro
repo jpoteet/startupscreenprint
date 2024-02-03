@@ -1,0 +1,207 @@
+---
+import Layout from '~/layouts/LandingLayout.astro';
+import Hero from '~/components/widgets/Hero.astro';
+import Content from '~/components/widgets/Content.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
+import Features3 from '~/components/widgets/Features3.astro';
+import Steps from '~/components/widgets/Steps.astro';
+
+const metadata = {
+  title: 'Business Course Beta',
+};
+---
+
+<Layout metadata={metadata}>
+
+  <!-- Hero2 Widget ******************* -->
+
+  <Hero
+    id="hero"
+    title="The Startup Screen Printing Business Course"
+    tagline="Go from Zero to Launch in 8 weeks"
+    actions={[{ variant: "primary", target: '_blank', text: 'Join Now', href: 'https://ck.startupscreenprinting.com/products/the-print-crew-incubator-beta?promo=BETA' }]}
+  >
+    <Fragment slot="subtitle">
+      <div class="my-4 text-left">
+      <p>The great thing about the screen print industry is the number of educational videos and resources available that teach just about every step of the screen print process.</p>
+      <br>
+      <p>The problem is, few of those even touch the business side of the conversation.</p>
+      <br>
+      <p>If you’re trying to start and grow a successful screen print business, just being a great printer won’t guarantee you success. That’s less than half of what you will spend your time doing as a business owner.</p>
+      <br>
+      <p>What about pricing? How will you calculate price to insure you’re profitable?</p>
+      <br>
+      <p>How do you get your first customers? How do you even know who your customers are?</p>
+      <br>
+      <p>How do you market your business effectively? Is advertising even worth it?</p>
+      <br>
+      <p>What do your internal processes look like? How will you manage things scheduling, customer service, and admin?</p>
+      <br>
+      <p>How will you pay yourself? When should you hire more help?</p>
+      <br>
+      <p>These questions only scratch the surface of what you need to understand to run a successful business in any industry, and screen printing is no exception.</p>
+      <br>
+      <p>Join me in this 8 week course and I’ll teach you everything you need to know to lay a solid foundation for your business. We’ll cover the print process, sure, but the meat of this course, the real value of this course, is the business knowledge I’ll share with you.</p>
+      <br>
+      <p>When we’re finished, you’ll have our pricing established, you’ll know exactly how you plan to market your business, you’ll have the tools you need for effective invoicing and bookkeeping, and you’ll have the confidence you need to take the next step in starting and growing a successful print company.</p>
+      <br>
+    </div>
+    </Fragment>
+  </Hero>
+
+  <!-- Content Widget **************** -->
+
+  <Content
+    id="about"
+    columns={3}
+    image={{
+      src: '/src/assets/images/SSP_IMAGES-6.JPG',
+      alt: 'Jesse Poteet',
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Lead by Jesse Poteet</h3>
+      <p>
+        Jesse has spent the last 25 years as a graphic designer, marketing professional, and screen printer. In 2017, he started his own screen print company in his basement, specializing in water based printing.
+      </p>
+      <br />
+      <p>
+        After experiencing success in his own print company and learning that he loved to teach, Jesse pivoted his career into a coaching role. He now helps screen printers all across the world start and grow profitable screen print businesses from home.
+      </p>
+    </Fragment>
+
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Content>
+
+  <!-- CallToAction Widget *********** -->
+
+  <CallToAction
+    title="Take the Next Step for Your Business"
+    subtitle="Don't miss this opportunity"
+    actions={[{
+      variant:"primary",
+      text: 'Join Now',
+      href: 'https://ck.startupscreenprinting.com/products/the-print-crew-incubator-beta?promo=BETA',
+    }]}
+  />
+
+  <!-- Steps Widget ****************** -->
+
+  <Steps
+    id="course"
+    title="Course Outline"
+    items={[
+      {
+        title:
+          'Getting Started',
+        description: `We'll start with the basics. A quick intro to screen printing then into popular terms, tools, print types, ink types, and more. This is the introductory session to get you familiar with all things screen printing.`,
+        icon: 'tabler:rocket',
+      },
+      {
+        title:
+          'Design Department',
+        description: `We'll cover the differences between raster and vector images and how to work with both to prepare art for screen printing. You will learn how to use Adobe Photoshop and Adobe Illustrator to create your art from scratch or work with low-quality artwork provided by a customer. Halftones, RIP, gradients, underbases, we'll cover it all.`,
+        icon: 'tabler:pencil',
+      },
+      {
+        title:
+          'Screen Making',
+        description: `An often intimidating part of screen printing. Let's spend some time talking about screen making. We'll cover everything from the time you get a new screen in the box until you load it onto the press. You will learn about exposure times, emulsion types, mesh sizes, frame types, dark room tools, and more.`,
+        icon: 'tabler:square',
+      },
+      {
+        title:
+          'On Press',
+        description: `Everybody's favorite part, the printing. We'll cover everything from receiving apparel, loading the screens, prepping ink, registration, printing, and post-printing clean-up.`,
+        icon: 'tabler:shirt',
+      },
+      {
+        title:
+          'Business Structure',
+        description: `This is a business, right? You're going to need to do some official steps to make sure you're ready to start selling your services. This session will cover business forming tips, bookkeeping, naming, and more.`,
+        icon: 'tabler:briefcase',
+      },
+      {
+        title:
+          'Pricing',
+        description: `Pricing has been done wrong in the industry for years. Let's clear it up with a better understanding of how you should price your services. You'll learn a profit-first approach and have the confidence you need to price any job accurately.`,
+        icon: 'tabler:businessplan',
+      },
+      {
+        title:
+          'Customer Service',
+        description: `The experience you provide your customer is more important than the quality of your work, and since the quality of your work is incredibly important, that's saying a lot. How you treat your customer can make or break your business. Let's cover how to do it correctly so your customers keep coming back again and again.`,
+        icon: 'tabler:man',
+      },
+      {
+        title:
+          'Marketing',
+        description: `Now that we have all the information we need to start a business, it's time for marketing. This final session we'll cover finding your first customer, setting up yoru website, and reaching out to potential customers. We'll also cover social media and email marketing.`,
+        icon: 'tabler:world',
+      },
+    ]}
+    classes={{ container: 'max-w-3xl' }}
+  />
+
+  <!-- CallToAction Widget *********** -->
+
+  <CallToAction
+    title="Ready to Launch Your Business?"
+    subtitle="Limited seats remaining"
+    actions={[{
+      variant:"primary",
+      text: 'Join Now',
+      href: 'https://ck.startupscreenprinting.com/products/the-print-crew-incubator-beta?promo=BETA',
+    }]}
+  />
+
+  <!-- Features3 Widget ************** -->
+
+  <Features3
+    title="Perks"
+    subtitle="Sign up for the course and you'll get these great benefits."
+    columns={3}
+    defaultIcon="tabler:point-filled"
+    items={[
+      {
+        title: 'Pricing Calculator',
+        description: 'I&apos;ll share my exact pricing calculator I custom built in Airtable.',
+      },
+      {
+        title: 'Proof Template',
+        description: 'One for Adobe Illustrator and one for Figma, you choose. I use both in my business.',
+      },
+      {
+        title: 'Lifetime Access',
+        description: 'Access to the recordings forever.',
+      },
+      {
+        title: 'Website Audit',
+        description: 'A free 30-min audit of your website with tips and recommendations for making it the best it can be.',
+      },
+      {
+        title: 'Private Community',
+        description: 'Access to a private section of The Print Crew reserved only for course members.',
+      },
+      {
+        title: 'Discounted 1:1 Coaching',
+        description: 'Get 4 coaching calls during the 8-week course for just $299 (Reg $599).',
+      },
+    ]}
+  />
+
+  <!-- CallToAction Widget *********** -->
+
+  <CallToAction
+    title="Join Before It's Too Late"
+    subtitle="Registration closes February 12th at midnight."
+    actions={[{
+      variant:"primary",
+      text: 'Join Now',
+      href: 'https://ck.startupscreenprinting.com/products/the-print-crew-incubator-beta?promo=BETA',
+    }]}
+  />
+
+</Layout>
