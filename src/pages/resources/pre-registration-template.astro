@@ -2,6 +2,7 @@
 import Layout from '~/layouts/LandingLayout.astro';
 import Hero2 from '~/components/widgets/Hero2.astro';
 import LeadForm from '~/components/widgets/LeadForm.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
 
 const metadata = {
   title: 'Pre-Registration Template',
@@ -16,14 +17,22 @@ const metadata = {
     tagline="Nail your registration before you get to the press"
     title="Pre-Registration Template for Screen Printing"
     subtitle="Good registration starts during screen making. Use this free template to line up your films consistantly on every screen so can spend less time registering on press and more time printing."
+    actions={[{
+      variant: 'primary',
+      text: 'Download Now',
+      href: 'javascript:void(0)',
+      target: '_blank',
+    },]}
     image={{
       src: '~/assets/images/pre-reg-template.jpeg',
       alt: 'Pre-Registration Template',
     }}
   />
-  <LeadForm
+
+  
+  <!-- <LeadForm
     title="Download the Template"
     subtitle="Enter your information below and I'll email you the template after you confirm your email address"
     embed="https://startscreenprinting.stimch.com/form/generate.js?id=1"
-  />
+  /> -->
 </Layout>
